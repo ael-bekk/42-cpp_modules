@@ -4,7 +4,7 @@ CC = c++ -Wextra -Wall -Werror
 
 VERSION = -std=c++98
 
-SRC = PhoneBook.cpp
+SRC = main.cpp PhoneBook.cpp Contact.cpp
 
 RM = rm -rf
 

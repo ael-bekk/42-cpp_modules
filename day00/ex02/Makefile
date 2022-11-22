@@ -1,10 +1,10 @@
-NAME = megaphone
+NAME = account
 
 CC = c++ -Wextra -Wall -Werror
 
 VERSION = -std=c++98
 
-SRC = megaphone.cpp
+SRC = Account.cpp test.cpp 
 
 RM = rm -rf
 

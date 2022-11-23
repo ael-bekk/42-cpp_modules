@@ -6,7 +6,7 @@ int main()
 {
     int f = 1;
     PhoneBook mobile;
-    
+
     while (1)
     {
         while(f || mobile.get_choice()->empty() || !skip_whitespace(*mobile.get_choice()))
@@ -32,5 +32,6 @@ int main()
         else
             mobile.set_flag(0);
     }
+
     return (0);
 }

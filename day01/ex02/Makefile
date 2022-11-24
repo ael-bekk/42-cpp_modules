@@ -1,10 +1,10 @@
-NAME = brainz
+NAME = brain
 
 CC = c++ -Wextra -Wall -Werror
 
 VERSION = -std=c++98
 
-SRC = main.cpp Zombie.cpp zombieHorde.cpp
+SRC = main.cpp
 
 RM = rm -rf
 

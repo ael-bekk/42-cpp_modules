@@ -11,6 +11,8 @@ int main(int ac, char *av[])
         return (0);
     std::string s = av[1];
     f1.open(av[1]);
+    if (!f1.is_open())
+        return (0);
     f2.open(s + ".replace");
     std::string str;
     std::string s1 = av[2];

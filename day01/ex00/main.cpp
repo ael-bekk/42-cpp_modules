@@ -7,5 +7,6 @@ int main()
     Zombie * A;
     
     A = newZombie( "dog" );
+    A->announce();
     delete A;
 }

@@ -1,4 +1,4 @@
-NAME = harl
+NAME = replace
 
 CC = c++ -Wextra -Wall -Werror
 

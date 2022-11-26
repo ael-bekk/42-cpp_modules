@@ -11,7 +11,6 @@ class Weapon {
     
     public:
         Weapon( std::string str );
-        // Weapon(const Weapon& w) = delete;
         const std::string &getType() const;
         void setType( std::string str );
 };

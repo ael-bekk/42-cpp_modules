@@ -5,9 +5,8 @@ HumanB::HumanB(std::string name):weapon(NULL), name(name) {}
 
 HumanB::HumanB(std::string name, Weapon *weapon):weapon(weapon), name(name) {}
 
-void HumanB::setWeapon( Weapon weapon ) {
-    int *i = new int;
-    *i = 5;
+void HumanB::setWeapon( Weapon &weapon ) {
+
     this->weapon = &weapon;
 }
 

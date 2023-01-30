@@ -35,10 +35,15 @@ int MateriaSource::find(AMateria* to_find) {
 }
 
 void MateriaSource::learnMateria(AMateria* materia) {
-///////
-
+    if (this->indx < 4 && this->find(materia) == -1)
+        this->materia[this->indx++] = materia->clone();
+    else if (this->indx < 4)
+        this->materia[this->indx++] = materia;
 }
 
 AMateria* MateriaSource::createMateria(std::string const & type) {
-
+    for (int i = 0; i < this->indx; i++)
+        if (type == this->materia[i]->getType())
+            return this->materia[i]->clone();
+    return (NULL);
 }

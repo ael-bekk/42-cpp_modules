@@ -1,6 +1,7 @@
 #ifndef __AMATERIA_HPP__
 #define __AMATERIA_HPP__
 
+#include <iostream>
 #include "ICharacter.hpp"
 class ICharacter;
 

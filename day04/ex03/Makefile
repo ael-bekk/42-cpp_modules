@@ -4,7 +4,7 @@ CC = c++ -Wextra -Wall -Werror
 
 VERSION = -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Ice.cpp Cure.cpp 
 
 RM = rm -rf
 

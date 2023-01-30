@@ -5,6 +5,8 @@
 
 class Character : public ICharacter
 {
+    private:
+        std::string 
     public:
         Character();
         Character(std::string str);

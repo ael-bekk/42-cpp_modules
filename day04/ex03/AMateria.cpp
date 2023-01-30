@@ -16,6 +16,7 @@ AMateria::AMateria(AMateria const & obj) {
 AMateria & AMateria::operator = (AMateria const & obj) {
     std::cout << "AMateria : Assignment Operator\n";
     this->type = obj.type;
+    return *this;
 }
 
 AMateria::~AMateria() {
@@ -27,5 +28,5 @@ std::string const & AMateria::getType() const {
 }
 
 void AMateria::use(ICharacter& target) {
-    std::cout << "* " << this->type << " *\n";
+    std::cout << "* " << target.getName() << " *\n";
 }

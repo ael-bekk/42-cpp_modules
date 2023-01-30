@@ -2,10 +2,13 @@
 
 Cure::Cure() {
     std::cout << "Cure : Default Constructor\n";
+    this->type = "cure";
 }
+
 
 Cure::Cure(std::string const & type) : AMateria::AMateria(type) {
     std::cout << "Cure : Constructor Parametrized\n";
+    this->type = "cure";
 }
 
 Cure::Cure(Cure const & obj) {
@@ -23,12 +26,12 @@ Cure::~Cure() {
     std::cout << "Cure : Default Destructor\n";
 }
 
-AMateria* AMateria::clone() const {
+AMateria* Cure::clone() const {
     AMateria* new_materia = new Cure();
     *new_materia = *this;
     return new_materia;
 }
 
 void Cure::use(ICharacter& target) {
-    std::cout << "* shoots an Cure bolt at " << this->type << " *\n";
+    std::cout << "* heals " << target.getName() << "’s wounds *\n";
 }

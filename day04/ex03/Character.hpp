@@ -6,7 +6,11 @@
 class Character : public ICharacter
 {
     private:
-        std::string 
+        std::string str;
+        AMateria    *materia[4];
+        AMateria    *M_collect[400];
+        int         indx;
+
     public:
         Character();
         Character(std::string str);
@@ -15,6 +19,7 @@ class Character : public ICharacter
         ~Character();
 
         std::string const & getName() const;
+        int find(AMateria* to_find);
         void equip(AMateria* m);
         void unequip(int idx);
         void use(int idx, ICharacter& target);

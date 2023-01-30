@@ -2,10 +2,12 @@
 
 Ice::Ice() {
     std::cout << "Ice : Default Constructor\n";
+    this->type = "ice";
 }
 
 Ice::Ice(std::string const & type) : AMateria::AMateria(type) {
     std::cout << "Ice : Constructor Parametrized\n";
+    this->type = "ice";
 }
 
 Ice::Ice(Ice const & obj) {
@@ -23,7 +25,7 @@ Ice::~Ice() {
     std::cout << "Ice : Default Destructor\n";
 }
 
-AMateria* AMateria::clone() const {
+AMateria* Ice::clone() const {
     AMateria* new_materia = new Ice();
     *new_materia = *this;
     return new_materia;

@@ -3,6 +3,9 @@
 #include <cmath>
 
 class ScalarConverter {
+
+    private:
+        ScalarConverter() {}
     public:
         static void convert(std::string s) {
             float a = 0;
@@ -25,8 +28,7 @@ int main(int ac, char **av)
 {
     if (ac == 2)
     {
-        ScalarConverter c;
-        c.convert(av[1]);
+        ScalarConverter::convert(av[1]);
     }
     return 0;
 }
